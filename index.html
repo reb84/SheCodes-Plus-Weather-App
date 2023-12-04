@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -20,19 +20,24 @@
             <input type="search" placeholder="Enter town or city..." required />
             <input type="submit" value="Search" /></form
         ></span>
-        <span class="city-result">London</span>
       </div>
 
-      <div class="current-report">
-        <div class="cityresult">London</div>
-        <div class="currentdate">Tuesday 14:49</div>
+      <div class="current-weather">
         <div>
-          Light intensity drizzle rain Humidity: 86% Wind: 6.69 m/sec scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
+          <h1 class="current-city" id="current-city">London</h1>
+          <p class="current-details">
+            <span id="current-date">Monday 17:13</span><br />
+            Moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
         </div>
-        <div>🌤️ 12°C</div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span
+          ><span class="current-temperature-value" id="current-temperature">24</span
+          ><span class="current-temperature-unit">°C</span>
+        </div>
       </div>
+
       <div class="forecast-container">7-day forecast:</div>
       <div class="footer-element">
         Coded by
