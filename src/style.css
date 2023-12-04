@@ -1,0 +1,27 @@
+body {
+  background: rgb(230, 230, 226);
+  background: linear-gradient(
+    118deg,
+    rgba(230, 230, 226, 1) 0%,
+    rgba(147, 166, 178, 1) 58%,
+    rgba(132, 147, 154, 1) 100%
+  );
+  background-attachment: fixed;
+  color: #545454;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.header-search,
+.current-report,
+.current-reports,
+.forecast-container,
+.footer-element {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+}

@@ -7,41 +7,42 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <div><h1>London</h1></div>
-      <div>
+    <div class="weather-container">
+      <div class="header-search">
         <form>
           <input type="search" placeholder="Enter a city.." required />
           <input type="submit" value="Search" />
         </form>
       </div>
-    </header>
-    <main>
-      <div>
-        <p>Currently in London</p>
+      <div class="current-report">
+        <div class="cityresult">London</div>
+        <div class="currentdate">Tuesday 14:49</div>
       </div>
-
-      <div>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
+      <div class="current-reports">
+        <div>
+          <p>
+            scattered clouds
+            <br />
+            Humidity: 66%, Wind: 3.13km/h
+          </p>
+        </div>
+        <div>🌤️ 12°C</div>
       </div>
-      <div>🌤️ 12°C</div>
-    </main>
-    <footer>
-      <p>
-        Coded by
-        <a href="https://github.com/reb84" target="_blank">Rebecca Upton</a>, is
-        <a href="https://github.com/reb84/SheCodes-Plus-Weather-App" target="_blank"
-          >open sourced on GitHub</a
+      <div class="forecast-container">7-day forecast:</div>
+      <div class="footer-element">
+        <small>
+          Coded by
+          <a href="https://github.com/reb84" target="_blank">Rebecca Upton</a>, is
+          <a href="https://github.com/reb84/SheCodes-Plus-Weather-App" target="_blank"
+            >open sourced on GitHub</a
+          >
+          and
+          <a href="https://she-codes-plus-weather-app.vercel.app/" target="_blank"
+            >hosted on Vercel</a
+          >.</small
         >
-        and
-        <a href="https://she-codes-plus-weather-app.vercel.app/" target="_blank">hosted on Vercel</a
-        >.
-      </p>
-    </footer>
+      </div>
+    </div>
   </body>
   <script src="src/script.js"></script>
 </html>
