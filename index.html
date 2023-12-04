@@ -4,43 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="weather-container">
       <div class="header-search">
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
-        </form>
+        <span class="city-search">
+          <form>
+            <input type="search" placeholder="Enter town or city..." required />
+            <input type="submit" value="Search" /></form
+        ></span>
+        <span class="city-result">London</span>
       </div>
+
       <div class="current-report">
         <div class="cityresult">London</div>
         <div class="currentdate">Tuesday 14:49</div>
-      </div>
-      <div class="current-reports">
         <div>
-          <p>
-            scattered clouds
-            <br />
-            Humidity: 66%, Wind: 3.13km/h
-          </p>
+          Light intensity drizzle rain Humidity: 86% Wind: 6.69 m/sec scattered clouds
+          <br />
+          Humidity: 66%, Wind: 3.13km/h
         </div>
         <div>🌤️ 12°C</div>
       </div>
       <div class="forecast-container">7-day forecast:</div>
       <div class="footer-element">
-        <small>
-          Coded by
-          <a href="https://github.com/reb84" target="_blank">Rebecca Upton</a>, is
-          <a href="https://github.com/reb84/SheCodes-Plus-Weather-App" target="_blank"
-            >open sourced on GitHub</a
-          >
-          and
-          <a href="https://she-codes-plus-weather-app.vercel.app/" target="_blank"
-            >hosted on Vercel</a
-          >.</small
+        Coded by
+        <a href="https://github.com/reb84" target="_blank">Rebecca Upton</a>. App is
+        <a href="https://github.com/reb84/SheCodes-Plus-Weather-App" target="_blank"
+          >open sourced on GitHub</a
         >
+        and
+        <a href="https://she-codes-plus-weather-app.vercel.app/" target="_blank">hosted on Vercel</a
+        >.
       </div>
     </div>
   </body>

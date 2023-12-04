@@ -8,6 +8,7 @@ body {
   );
   background-attachment: fixed;
   color: #545454;
+  font-family: "Raleway", sans-serif;
 }
 
 .weather-container {
@@ -17,11 +18,23 @@ body {
 
 .header-search,
 .current-report,
-.current-reports,
-.forecast-container,
-.footer-element {
+.forecast-container {
   background-color: #ffffff;
   padding: 30px;
   margin: 20px auto;
   border-radius: 10px;
+}
+
+.footer-element {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.city-search {
+  float: right;
 }
