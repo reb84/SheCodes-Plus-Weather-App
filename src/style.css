@@ -13,10 +13,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #1b7fb3;
+  color: #bf8240;
 }
 a:hover {
-  color: #bf8240;
+  color: #1b7fb3;
 }
 
 .weather-container {
@@ -25,20 +25,28 @@ a:hover {
 }
 
 .header-search,
-.current-weather,
-.forecast-container,
-.footer-element {
+.current-main,
+.forecast-container {
   background-color: #ffffff;
-  padding: 30px;
-  margin: 20px auto;
-  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 30px;
+}
+.city-main {
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .footer-element {
-  padding: 10px;
   text-align: center;
   font-size: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 30px;
 }
 
 .search-input {
@@ -46,7 +54,7 @@ a:hover {
   border: solid 1px #8698a0;
   font-size: 14px;
   padding: 12px;
-  border-radius: 4px;
+  border-radius: 30px;
   width: 462px;
 }
 
@@ -58,7 +66,7 @@ a:hover {
   border: none;
   padding: 12px;
   line-height: 1;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .search-button:hover {
@@ -74,10 +82,13 @@ a:hover {
 }
 
 .current-city {
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 42px;
   letter-spacing: 2px;
+  color: #4093bf;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 .current-details {
   font-size: 16px;
@@ -85,8 +96,17 @@ a:hover {
   line-height: 24px;
 }
 
+#current-date {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .current-details strong {
   color: #4093bf;
+}
+
+.current-temperature {
+  margin-top: 5px;
 }
 
 .current-temperature-icon {
@@ -98,11 +118,12 @@ a:hover {
 
 .current-temperature-value {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 600;
+  color: #4093bf;
 }
 
 .current-temperature-unit {
   font-size: 28px;
   position: relative;
-  top: -38px;
+  top: -30px;
 }
