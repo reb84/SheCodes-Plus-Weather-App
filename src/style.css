@@ -38,7 +38,7 @@ a:hover {
 .search-button {
   margin-left: 5px;
   font-size: 12px;
-  background-color: #4093bf;
+  background-color: #494e60;
   color: #ffffff;
   border: none;
   padding: 10px;
@@ -46,8 +46,8 @@ a:hover {
 }
 
 .search-button:hover {
-  background-color: #889ba3;
-  color: #ffffff;
+  background-color: #d4d5d9;
+  color: #494e60;
   cursor: pointer;
   transition: all 500ms ease;
 }
@@ -115,4 +115,8 @@ a:hover {
   text-align: center;
   border-bottom: solid 1px #616977;
   padding-bottom: 20px;
+}
+
+.current-details strong {
+  color: #e7eaee;
 }
