@@ -26,7 +26,7 @@ a:hover {
   padding: 0px 0px;
   margin-bottom: 30px;
 }
-.search-input {
+.search-form-input {
   background-color: #e4e4e1;
   border: solid 1px #8698a0;
   font-size: 12px;
@@ -35,7 +35,7 @@ a:hover {
   width: 489px;
 }
 
-.search-button {
+.search-form-button {
   margin-left: 5px;
   font-size: 12px;
   background-color: #494e60;
@@ -45,7 +45,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.search-button:hover {
+.search-form-button:hover {
   background-color: #d4d5d9;
   color: #494e60;
   cursor: pointer;

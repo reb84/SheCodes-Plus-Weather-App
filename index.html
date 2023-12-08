@@ -27,15 +27,15 @@
   <body>
     <div class="weather-container">
       <div class="header-search">
-        <form id="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a town or city.."
+            placeholder="Enter a city.."
             required
-            class="search-input"
-            id="search-input"
+            id="search-form-input"
+            class="search-form-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </div>
       <div class="current-main">
@@ -43,7 +43,7 @@
           <h1 class="current-city" id="current-city">London</h1>
         </div>
         <div class="current-when">
-          <span id="current-date">Monday</span>
+          <span id="current-date"></span>
         </div>
 
         <div class="current-temperature">

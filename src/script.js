@@ -1,3 +1,13 @@
+function showCityResult(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-form-input");
+  let searchCityResult = document.querySelector("#current-city");
+  searchCityResult.innerHTML = searchInput.value;
+}
+
+let searchCityForm = document.querySelector("#search-form");
+searchCityForm.addEventListener("submit", showCityResult);
+
 //// DATE + TIME ////
 
 function formatDate(date) {
