@@ -1,16 +1,23 @@
 function searchCity(city) {
-  let apiKey = "a7fd89897e18b9862b380a75d7eee1ed";
-  let units = `metric`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+  let apiKey = "22de0057ea42aa649cbcof0e3b1te784";
+  let unit = "metric";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&units=${unit}&key=${apiKey}`;
   axios.get(apiUrl).then(showWeather);
 }
 
 function showWeather(response) {
   let cityResult = document.querySelector("#current-city");
-  cityResult.innerHTML = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = Math.round(response.data.temperature.current);
   let currentTemperature = document.querySelector("#current-temperature");
+  let conditionsElement = document.querySelector("#description");
+  let windHumidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+
+  cityResult.innerHTML = response.data.city;
   currentTemperature.innerHTML = `${temperature}`;
+  conditionsElement.innerHTML = response.data.condition.description;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  windHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 }
 
 function citySearchSubmit(event) {
