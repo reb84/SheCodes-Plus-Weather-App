@@ -8,12 +8,13 @@ function searchCity(city) {
 function showWeather(response) {
   let cityResult = document.querySelector("#current-city");
   let temperature = response.data.temperature.current;
-  let currentTemperature = document.querySelector("#current-temperature");
+  let currentTemperature = document.querySelector("#current-temp");
   let conditionsElement = document.querySelector("#description");
   let windHumidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let currentLocalDate = document.querySelector("#current-date");
-  let localDate = new Date();
+  let localDate = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#current-weather-icon");
 
   cityResult.innerHTML = response.data.city;
   currentTemperature.innerHTML = Math.round(temperature);
@@ -21,6 +22,7 @@ function showWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   windHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   currentLocalDate.innerHTML = formatDate(localDate);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
 }
 
 function formatDate(date) {

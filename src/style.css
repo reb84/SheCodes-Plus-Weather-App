@@ -89,26 +89,26 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.current-temperature {
+.current-temp-container {
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -14px;
-  font-size: 40px;
-  margin-right: 10px;
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
 }
 
-.current-temperature-value {
+.current-temp-value {
   font-size: 90px;
   font-weight: 300;
 }
 
-.current-temperature-unit {
+.current-temp-unit {
   font-size: 20px;
-  position: relative;
-  top: -40px;
+  margin-top: 30px;
 }
 
 .current-extra {
