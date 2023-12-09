@@ -12,25 +12,16 @@ function showWeather(response) {
   let conditionsElement = document.querySelector("#description");
   let windHumidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
+  let currentLocalDate = document.querySelector("#current-date");
+  let localDate = new Date();
 
   cityResult.innerHTML = response.data.city;
   currentTemperature.innerHTML = Math.round(temperature);
   conditionsElement.innerHTML = response.data.condition.description;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   windHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  currentLocalDate.innerHTML = formatDate(localDate);
 }
-
-function citySearchSubmit(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#search-form-input");
-  searchCity(searchInput.value);
-}
-
-let searchCityForm = document.querySelector("#search-form");
-searchCityForm.addEventListener("submit", citySearchSubmit);
-searchCity("London");
-
-//// DATE + TIME ////
 
 function formatDate(date) {
   let currentDay = date.getDay();
@@ -68,8 +59,12 @@ function formatDate(date) {
   return `${formattedDay}  -   ${currentDate} ${formattedMonth}  -  ${currentHour}:${currentMinute}`;
 }
 
-let currentLocalDate = document.querySelector("#current-date");
-let localDate = new Date();
-currentLocalDate.innerHTML = formatDate(localDate);
+function citySearchSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-form-input");
+  searchCity(searchInput.value);
+}
 
-////  ////
+let searchCityForm = document.querySelector("#search-form");
+searchCityForm.addEventListener("submit", citySearchSubmit);
+searchCity("London");
