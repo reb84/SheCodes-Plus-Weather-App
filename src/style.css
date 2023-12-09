@@ -52,12 +52,6 @@ a:hover {
   transition: all 500ms ease;
 }
 
-.forecast-container {
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 30px;
-}
-
 .footer-element {
   text-align: center;
   font-size: 9px;
