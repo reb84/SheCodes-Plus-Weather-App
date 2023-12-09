@@ -7,14 +7,14 @@ function searchCity(city) {
 
 function showWeather(response) {
   let cityResult = document.querySelector("#current-city");
-  let temperature = Math.round(response.data.temperature.current);
+  let temperature = response.data.temperature.current;
   let currentTemperature = document.querySelector("#current-temperature");
   let conditionsElement = document.querySelector("#description");
   let windHumidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
 
   cityResult.innerHTML = response.data.city;
-  currentTemperature.innerHTML = `${temperature}`;
+  currentTemperature.innerHTML = Math.round(temperature);
   conditionsElement.innerHTML = response.data.condition.description;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   windHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
