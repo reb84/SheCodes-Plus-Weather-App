@@ -13,7 +13,7 @@ function showWeather(response) {
   let windHumidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let currentLocalDate = document.querySelector("#current-date");
-  let localDate = new Date(response.data.time * 1000);
+  let localDate = new Date();
   let iconElement = document.querySelector("#current-weather-icon");
 
   cityResult.innerHTML = response.data.city;
